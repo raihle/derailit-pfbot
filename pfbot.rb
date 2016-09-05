@@ -1,4 +1,5 @@
 require 'http'
+require 'slack-ruby-bot'
 
 class PfBot < SlackRubyBot::Bot
 	match(/^(?<bot>\w*)\s(?<expression>.*)$/) do |client, data, match|
